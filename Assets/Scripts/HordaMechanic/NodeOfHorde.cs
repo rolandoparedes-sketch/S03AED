@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System;
 
 
+[System.Serializable]
 [InlineEditor]
 public class NodeOfHorde
 {

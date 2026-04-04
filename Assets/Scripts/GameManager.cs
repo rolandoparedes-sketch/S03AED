@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
     //public LinkedList<string> ListaDeNombres = new();
 
     public Enemy enemyPref;
-
     public CustomLinkedList HordaManagment;
 
 
@@ -16,7 +15,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         HordaManagment.Set(enemyPref);
-
+        
         //HordaManagment.ad
         foreach (var horde in Nodes)
         {
@@ -77,7 +76,7 @@ public class GameManager : MonoBehaviour
     [Button]
     public void HordeSpawnTest()
     {
-        //NodeOfHorde hordaA = new();
+        HordaManagment.Set(enemyPref);
         HordaManagment.SpawnHorde();
     }
 }

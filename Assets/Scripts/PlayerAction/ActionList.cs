@@ -7,9 +7,11 @@ public class ActionList
     public void AddAction(PlayerAction action)
     {
         ActionNode newNode = new ActionNode(action);
+
         if (head == null)
         {
             head = newNode;
+            return; // 👈 CLAVE
         }
 
         ActionNode current = head;
@@ -21,4 +23,3 @@ public class ActionList
         current.next = newNode;
     }
 }
-
